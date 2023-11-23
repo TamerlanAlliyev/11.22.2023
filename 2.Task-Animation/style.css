@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   min-height: 100vh;
+}
+
+.notification img{
+    height: 100px;
+    animation: vibrate 700ms ease-in-out; ;
+    animation-delay: 0.5s;
+}
+
+@keyframes vibrate{
+  0%, 100%{
+    transform: rotate(0);
+  }
+  20%, 60%{
+    transform: rotate(40deg);
+  }
+  40%,  80%{
+    transform: rotate(-40deg);
+  }
+}
